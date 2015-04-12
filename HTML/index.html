@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link href ="../css/bootstrap.min.css" rel="stylesheet">
+<link href ="../css/styles.css" rel="stylesheet">
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+
+</head>
+<body>
+	<div class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand"  href="#">
+				<img  class="navbar-brand logo-nav" src="../images/defaultlogo.jpg"/>
+				FOUNDATION
+			</a>
+			
+			
+			
+		
+		</div>
+		<div class = "collapse navbar-collapse navHeaderCollapse ">
+			
+				<ul class = "nav navbar-nav navbar-right" >
+					<li id="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li class="dropdown" id="login">
+						<a href="#" class="dropdown-toggle log" data-toggle="dropdown" role="button" aria-expanded="true">Log In</a>
+						<form onsubmit="return false;" class="login outerlogin dropdown-menu logmenu">
+							<label for="email">Email:</label>
+							<input id="logemail" required type="email" name="logemail" placeholder="Enter Email"/>
+							<label for="password">Password:</label>
+							<input id="logpassword" required type="password" name="logpassword" placeholder="Enter Password"/>
+							<br>
+							<button class="btn btn-danger" type="submit" style="float:right;" onClick="validateLogInForm()">Log In</button>
+						</form>
+						
+					</li>
+					<li class="dropdown hidden" id="profile">
+						<a href="#" class="dropdown-toggle profile" data-toggle="dropdown" role="button" aria-expanded="true">Profile</a>
+						<ul class="dropdown-menu profilemenu">
+							<li><a href="adminDetails.html"> Admin Details</a></li>
+							<li><a href="donationLog.html"> Donation Log</a></li>
+							<li><a href="manageUsers.html"> Manage Users</a></li>
+							<li><a href="index.html" onClick="onLogOut()"> Log Out</a></li>
+						</ul>
+					</li>
+						
+				</ul>
+			</div>
+			</div>
+	</div>
+	<div  class="body">
+	<div class="container  jumbotron">
+	
+		<div class="title secondContainer">
+			<div class="row">
+				<div class="col-md-6">
+					<h1><small>NULLA MATTIS AUCTOR ODIO VITAE PLACERAT.</small></h1>
+				</div>
+			</div>
+			<div class="row nameFoundation">
+				<h1>FOUNDATION</h1>
+			</div>
+			
+			
+			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mi sed felis pulvinar sollicitudin. Ut hendrerit aliquam velit, a tincidunt mauris tincidunt sit amet. Nullam suscipit eros eget neque scelerisque, at maximus elit tempus. Mauris vitae lacinia dolor.</h4>
+			<a href="about.html"><button style="float:right;" type="button" class="btn btn-primary">Learn more about us</button></a>
+			<button style="float:left;" type="button" class="btn btn-success" id="tocarousel">Next</button>
+		</div>
+		</div>
+		<br><br>
+		<center>
+		<div  id="myCarousel"  class="carousel slide" data-ride="carousel">
+		<div class="overlay">
+			<a href="donate.html" class="btn btn-danger btn-lg">DONATE NOW</a>
+		</div>
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+		</ol>   
+ 
+		<div class="carousel-inner">
+			<div class="item active"><center>
+				<img class="carimg" src="../images/default.jpg"/>
+				</center>
+			</div>
+			<div class="item">
+				<center><img class="carimg" src="../images/default.jpg"/></center>
+			</div>
+			<div class="item">
+				<center><img class="carimg" src="../images/default.jpg"/></center>
+			</div>
+			<div class="item">
+				<center><img class="carimg" src="../images/default.jpg"/></center>
+			</div>
+			<div class="item">
+				<center><img class="carimg" src="../images/default.jpg"/></center>
+			</div>
+			<div class="item">
+				<center><img class="carimg" src="../images/default.jpg"/></center>
+			</div>
+			
+		</div>
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+		
+	</div> 
+	</center>
+		
+	
+	
+	<div class="bottom">
+		<div class="container">
+			<div class="block">
+				<div class="col-md-4">
+					<div><img class="blockimg" src="../images/default.jpg"/></div>
+				</div>
+				<div class="col-md-7 col-md-offset-1">
+					<div class="row"><h3>Current Project:</h3></div>
+					<div class="row">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mi sed felis pulvinar sollicitudin. Ut hendrerit aliquam velit, a tincidunt mauris tincidunt sit amet. Nullam suscipit eros eget neque scelerisque, at maximus elit tempus</p>						
+							<a href="projects.html#currentprojects"><button type="button" class="btn btn-primary">Learn more</button></a>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	
+	</div>
+	<div class = "navbar navbar-fixed-bottom">
+		<div class = "container">
+			<p class= "navbar-text pull-right">
+			<span style="color:red;">Subscribe:</span>
+				<a href="#"><img class="icon" src="../images/facebook.png"/></a>
+				<a href="#"><img class="icon" src="../images/twitter.png"/></a>
+				<a href="#"><img class="icon" src="../images/youtube.png"/></a>
+				<a href="#"><img class="icon" src="../images/google.png"/></a>
+			</p>
+		</div>
+	
+	</div>
+	</div>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>

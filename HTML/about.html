@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link href ="../css/bootstrap.min.css" rel="stylesheet">
+<link href ="../css/styles.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand"  href="#">
+				<img  class="navbar-brand logo-nav" src="../images/defaultlogo.jpg"/>
+				FOUNDATION
+			</a>
+			
+			
+			
+		
+		</div>
+		<div class = "collapse navbar-collapse navHeaderCollapse ">
+			
+				<ul class = "nav navbar-nav navbar-right" >
+					<li><a href="index.html">Home</a></li>
+					<li id="active"><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li class="dropdown" id="login">
+						<a href="#" class="dropdown-toggle log" data-toggle="dropdown" role="button" aria-expanded="true">Log In</a>
+						<form onsubmit="return false;" class="login outerlogin dropdown-menu logmenu">
+							<label for="email">Email:</label>
+							<input id="logemail" required type="email" name="logemail" placeholder="Enter Email"/>
+							<label for="password">Password:</label>
+							<input id="logpassword" required type="password" name="logpassword" placeholder="Enter Password"/>
+							<br>
+							<button class="btn btn-danger" type="submit" style="float:right;" onClick="validateLogInForm()">Log In</button>
+						</form>
+						
+					</li>
+					<li class="dropdown hidden" id="profile">
+						<a href="#" class="dropdown-toggle profile" data-toggle="dropdown" role="button" aria-expanded="true">Profile</a>
+						<ul class="dropdown-menu profilemenu">
+							<li><a href="adminDetails.html"> Admin Details</a></li>
+							<li><a href="donationLog.html"> Donation Log</a></li>
+							<li><a href="manageUsers.html"> Manage Users</a></li>
+							<li><a href="index.html" onClick="onLogOut()"> Log Out</a></li>
+						</ul>
+					</li>
+						
+				</ul>
+			</div>
+			</div>
+	</div>
+	<div  class="body">
+	<div class="container jumbotron ">
+		<div class="title secondContainer" align="center">
+			<h1>About us</h1>
+		</div><br>
+		<div class="">
+			<div class="tabs">
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab1</a></li>
+					<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" onClick="switchTab()" >Tab2</a></li>
+					<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" id="contacts">Contact Us</a></li>
+				</ul>
+				<div class="tab-content activetab">
+				<div role="tabpanel" class=" tab-pane active " id="tab1">
+					<h6 align="right">Tab1</h6>
+					<h1>Foundation</h1>
+					<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<br>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut elit quis est consequat aliquet. Donec id sagittis tellus, non commodo ante. Nulla iaculis lectus et tellus pulvinar vulputate ac non turpis. Mauris vitae fermentum elit. Suspendisse a tortor ac diam tempus ultrices. Suspendisse nec nulla sit amet ipsum bibendum suscipit. Morbi ornare ligula justo, interdum varius mauris euismod nec. </p>
+				</div>
+				<div role="tabpanel" class=" tab-pane" id="tab2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut elit quis est consequat aliquet. Donec id sagittis tellus, non commodo ante. Nulla iaculis lectus et tellus pulvinar vulputate ac non turpis. Mauris vitae fermentum elit. Suspendisse a tortor ac diam tempus ultrices. Suspendisse nec nulla sit amet ipsum bibendum suscipit. Morbi ornare ligula justo, interdum varius mauris euismod nec. </p>
+					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut id consectetur risus. Donec non diam vel leo semper suscipit ac accumsan nisi. Suspendisse potenti. Mauris maximus faucibus ex, eget rhoncus diam ultricies sed. Aliquam aliquet odio urna, in viverra augue tempus eu.</p>
+				</div>
+				<div role="tabpanel" class=" tab-pane" id="tab3">
+					<div class="row contacttab">
+						<center><h2>Questions? Contact us now!</h2><center><br><br><br>
+					</div>
+					<div>
+						<table class="table">
+							<tr>
+								<td>Email:</td>
+								<td>foundation@email.com</td>
+							</tr>
+							<tr>
+								<td>Telephone:</td>
+								<td>1234567890</td>
+							</tr>
+							<tr>
+								<td>Main Office:</td>
+								<td>Default St. , Manila, Philippines</td>
+							</tr>
+						</table>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		</div>
+	
+	
+	
+	<div class="bottom">
+		<div class="container">
+			<div class="block">
+				<div class="col-md-4">
+					<div><img class="blockimg" src="../images/default.jpg"/></div>
+				</div>
+				<div class="col-md-7 col-md-offset-1">
+					<div class="row"><h3>Current Project:</h3></div>
+					<div class="row">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mi sed felis pulvinar sollicitudin. Ut hendrerit aliquam velit, a tincidunt mauris tincidunt sit amet. Nullam suscipit eros eget neque scelerisque, at maximus elit tempus</p>						
+							<a href="projects.html#currentprojects"><button type="button" class="btn btn-primary">Learn more</button></a>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	
+	</div>
+	<div class = "navbar navbar-fixed-bottom">
+	
+		<div class = "container">
+			<p class= "navbar-text pull-right">
+			<span style="color:red;">Subscribe:</span>
+				<a href="#"><img class="icon" src="../images/facebook.png"/></a>
+				<a href="#"><img class="icon" src="../images/twitter.png"/></a>
+				<a href="#"><img class="icon" src="../images/youtube.png"/></a>
+				<a href="#"><img class="icon" src="../images/google.png"/></a>
+			</p>
+		</div>
+	
+	</div>
+	</div>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
