@@ -32,6 +32,7 @@ function validateForm()
 {
 	var mobile = $("#inputMobile").val();
 	var amount = $("#inputAmount").val();
+	var zip = $("#inputZip").val();
 	
 	if (isNaN(amount))
 	{
@@ -41,6 +42,11 @@ function validateForm()
 	else if (isNaN(mobile))
 	{
 		alert("Enter valid contact number.");
+		return false;
+	}
+	else if (isNaN(zip) || zip.length != 4)
+	{
+		alert("Enter valid Zip Code (4 digits)");
 		return false;
 	}
 	else

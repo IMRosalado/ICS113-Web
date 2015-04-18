@@ -62,19 +62,19 @@ h1 small
 {
 	background-image: url('../images/defaultbottom.jpg');
 	padding: 50px;
-
+	height: 350px;
 	
 }
 .block
 {
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: inset 1px 1px 5px #000;
+
+	color: rgb(100,100,100);
 	padding: 25px;
 	padding-left:30px;
 	padding-right:30px;
 	text-align: center;
-	height: 200px;
+	height: 250px;
+	
 }
 
 #active
@@ -130,6 +130,10 @@ h1 small
 	background-color: rgba(0,0,0,0.3);
 	padding: 20px;
 	
+}
+#amountbox
+{
+	width: 300px;
 }
 .navbar .nav > li > a{ 
 	color: black; 
