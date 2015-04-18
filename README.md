@@ -13,5 +13,6 @@ Version 1
 - No links to social media
 
 Version 2
--Updated footer on all html files
--more organized donation form
+- Updated footer on all html files
+- more organized donation form
+
