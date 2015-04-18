@@ -8,7 +8,7 @@ Cabe, Gerlan Mark (Database)
 Version 1
 - 8 HTML Files
 - 7 CSS files (styles.css original js file)
-- 3 JS files (script.js original js file)
+- 3 JS files (script.js original css file)
 - Includes 4 font files and 11 images
 - No links to social media
 
