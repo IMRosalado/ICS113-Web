@@ -44,9 +44,9 @@ function validateForm()
 		alert("Enter valid contact number.");
 		return false;
 	}
-	else if (isNaN(zip) || zip.length != 4)
+	else if (isNaN(zip))
 	{
-		alert("Enter valid Zip Code (4 digits)");
+		alert("Enter valid Zip Code");
 		return false;
 	}
 	else
